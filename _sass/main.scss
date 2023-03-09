@@ -40,10 +40,19 @@ body {
     margin-bottom: 2em;
 }
 
-#table-contents ul {
+.table-contents ul {
     list-style-type: none;
 }
 
-#table-contents ul li {
+.toc ul li {
     padding: .25em 0;
 }
+
+.checklists * {
+    list-style-type: none;
+}
+
+.checklists * li::before {
+    content: "\2610"; margin-right: 0.5em;
+}
+
