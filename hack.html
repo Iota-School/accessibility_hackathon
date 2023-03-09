@@ -9,7 +9,7 @@ title: "Notebook Accessibility Minihack"
 
     <div class="container col-xxl-12 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-	<div class="col-4 col-sm-10 col-lg-4">
+	<div class="col-4 col-sm-4 col-lg-4">
 	  <!-- <img style="width: 20rem" src="assets/images/stsci_logo.png" class="d-block mx-lg-auto img-fluid" alt="Space Telescope Science Institute logo" width="700" height="500" loading="lazy"> -->
 
 	</div>
@@ -47,30 +47,61 @@ title: "Notebook Accessibility Minihack"
     </h2>
 
     <p>
-      You have two options for picking a notebook to evaluate during this minihack:
+      You have three options for picking a notebook to evaluate during this minihack. (If you're not sure about this step, pick one of the default notebooks under the first option.)
     </p>
-    <ul>
-      <li>Use a notebook created by you or your organization. Since we'll be evaluating the HTML export of the notebook, you will first want to open the notebook in Jupyter, then Choose `File > Download as > HTML (.html)`. This will export your notebook to HTML in the same folder as the notebook. Once you're done, open the notebook in a web browser such as Chrome before going on to the next step.</li>
-      <li>If you don't have your own notebook on hand, choose a notebook from one of the Space Telescope Science Institute projects below.
-      </li>
-    </ul>
+
+    <p>Option 1:  Choose one of the notebooks below. This is the default option.</p>
 
     <div style="margin-top:2em" class="container">
       <div class="row">
-	<div style="text-align:center" class="col-3 mx-auto">
-	  <a class="btn btn-primary btn-lg px-4 me-md-2" target="_blank" href="https://spacetelescope.github.io/jdat_notebooks/">JDAT Notebooks</a>
+	<div style="text-align:center" class="col-4 col-md-3 mx-auto">
+	  <a class="btn btn-primary btn-lg px-4 me-md-2" target="_blank" href="https://spacetelescope.github.io/jdat_notebooks/notebooks/asdf_example/asdf_example.html">ASDF Creation</a>
+
 	</div>
-	<div class="col-9">
+	<div class="col-md-9 col-8">
+	  <p>
+JWST data files make use of the Advanced Scientific Data Format. This notebook shows how to create an ASDF (Advanced Scientific Data Format) file from a FITS file.<br><br>
+	  </p>
+	</div>
+      </div>
+
+      <div class="row">
+	<div style="text-align:center" class="col-4 col-md-3 mx-auto">
+	  <a class="btn btn-primary btn-lg px-4 me-md-2" target="_blank" href="https://spacetelescope.github.io/hellouniverse/notebooks/hello-universe/Classifying_JWST-HST_galaxy_mergers_with_CNNs/Classifying_JWST-HST_galaxy_mergers.html">Galaxy Mergers</a>
+	</div>
+	<div class="col-md-9 col-8">
+	  <p>
+An example of building, compiling, and training a convolutional neural network on simulated astronomical data. The CNN classifies JWST-HST galaxy mergers.<br><br>
+	  </p>
+
+	  
+	</div>
+      </div>    
+    </div>
+
+    <p>
+      Option 2: Use a notebook created by you or your organization. Since we'll be evaluating the HTML export of the notebook, you will first want to open the notebook in Jupyter, then Choose `File > Download as > HTML (.html)`. This will export your notebook to HTML in the same folder as the notebook. Once you're done, open the notebook in a web browser such as Chrome before going on to the next step.
+    </p>
+    <p>
+      Option 3: Select a different notebook from an STScI project. The HTML notebooks can be found using the links on the left side of each project page. Screen reader users can navigate by list or list item to jump right to the lists of notebooks.
+    </p>
+    
+    <div style="margin-top:2em" class="container">
+      <div class="row">
+	<div style="text-align:center" class="col-4 col-md-3 mx-auto">
+	  <a class="btn btn-success btn-lg px-4 me-md-2" target="_blank" href="https://spacetelescope.github.io/jdat_notebooks/">JDAT Notebooks</a>
+	</div>
+	<div class="col-md-9 col-8">
 	  <p>
 	    The jdat_notebooks repository contains notebooks illustrating workflows for post-pipeline analysis of JWST data. Some of the notebooks also illustrate generic analysis workflows that are applicable to data from other observatories as well. This repository and the notebooks are one component of STScI’s larger Data Analysis Tools Ecosystem.
 	  </p>
 	</div>
       </div>
       <div class="row">
-	<div style="text-align:center" class="col-3 mx-auto">
+	<div style="text-align:center" class="col-4 col-md-3 mx-auto">
 	  <a class="btn btn-success btn-lg px-4 me-md-2" target="_blank" href="https://spacetelescope.github.io/hellouniverse/intro.html">Hello Universe</a>
 	</div>
-	<div class="col-9">
+	<div class="col-md-9 col-8">
 	  <p>
 	    Hello Universe is an initiative at MAST to provide a space for applying machine learning (ML) algorithms to astronomical data. The first set of notebooks are designed to span a range of ML techniques, and to highlight MAST mission data, including user-contributed high-level science products (HLSPs).
 	  </p>
@@ -80,10 +111,6 @@ title: "Notebook Accessibility Minihack"
       </div>    
     </div>
 
-    <p>
-      The HTML notebooks can be found using the links on the left side of each project page. Screen reader users can navigate by list or list item to jump right to the lists of notebooks.
-    </p>
-    
   </section>
 
   <section>
@@ -92,8 +119,13 @@ title: "Notebook Accessibility Minihack"
     </h2>
 
     <p>
-      Once you've chosen a notebook, choose some criteria from the notebook authoring tips document. Take a look at your chosen notebook and evaluate whether or not the notebook follows best practices for authoring notebooks in that area. You may wish to divide up some of the main areas of concern within your breakout group—for example, one group might evaluate headings while another looks at code formatting.
+      Once you've chosen a notebook:
     </p>
+    <ul>
+      <li>Choose some criteria from the notebook authoring tips document. For example: focus on the notebook’s plots. Pick whichever area is most interesting to you. </li>
+      <li>Take a look at your chosen notebook and evaluate whether or not the notebook follows best practices for authoring notebooks in that area. </li>
+      <li>You may wish to divide up some of the main areas of concern within your breakout group—for example, one group might evaluate headings while another looks at code formatting.</li>
+      </ul>
   </section>
 
   <section>
@@ -102,11 +134,11 @@ title: "Notebook Accessibility Minihack"
     </h2>    
 
     <p>
-      When we regroup with the rest of the participants, we'll consider each groups answers to three questions:
+      When we regroup with the rest of the participants, we'll consider each groups answers to these questions:
     </p>
     <ul>
       <li>What was the most common accessibility issue you encountered?</li>
-      <li>What content immediately checked as accessible?</li>
+      <li>What content was already accessible?</li>
       <li>What surprised you the most in this process?</li>
       <li>Do you think you’ll change anything when authoring notebooks or documents going forward?</li>
     </ul>
@@ -122,12 +154,14 @@ title: "Notebook Accessibility Minihack"
     </p>
 
     <ul>
-      <li>If you're using an STScI notebook from JDAT, the HTML Jupyter Notebooks on the left side of the page are hosted in their own individual repositories on GitHub. You can find the repository in the table on the <a href="https://spacetelescope.github.io/hellouniverse/intro.html" target="_blank">JDAT project page</a> and either <a target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">open an issue</a> or <a target="_blank" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">start a pull request</a>.</li>
-      <li>If you're using an STScI notebook from Hello Universe, you can visit the <a target="_blank" href="https://github.com/spacetelescope/hellouniverse">repository containing all Hello Universe notebooks</a> and either <a target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">open an issue</a> or <a target="_blank" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">start a pull request</a>.</li>
-      <li>If you're not experienced with GitHub, you can also use Google or visit the <a target="_blank" href="https://www.stsci.edu/">STScI website</a> to find individuals or groups connected to your notebook and send them an email. Feel free to <a target="_blank" href="/#contact">reach out to the event organizers</a> for assistance.</li>
+      <li>
+	If you have just audited a JDAT notebook, the HTML Jupyter Notebooks on the left side of the page are hosted in their own individual repositories on GitHub. You can find the repository in the table on the <a href="https://spacetelescope.github.io/hellouniverse/intro.html" target="_blank">JDAT project page</a> and either <a target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">open an issue</a> or <a target="_blank" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">start a pull request</a>.</li>
+      <li>
+	If you audited a Hello Universe Notebook, you can visit the <a target="_blank" href="https://github.com/spacetelescope/hellouniverse">repository containing all Hello Universe notebooks</a> and either <a target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">open an issue</a> or <a target="_blank" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">start a pull request</a>.</li>
+      <li>If you're not experienced with GitHub, you can also use Google or visit the <a target="_blank" href="https://www.stsci.edu/">STScI website</a> to find individuals or groups connected to your notebook and send them an email. Feel free to <a target="_blank" href="index#contact">reach out to the event organizers</a> for assistance.</li>
       </ul>
 
 </section>
-
+</div>
 
     <!-- TODO Add best practices link -->
